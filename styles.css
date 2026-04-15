@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI;
+}
+
+body {
+    background: #f4f6fb;
+    color: #222;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    background: linear-gradient(135deg, #c48b8f, #8fae9b);
+    color: white;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin: 0 8px;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+.btn {
+    background: white;
+    color: #c48b8f;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url('https://images.unsplash.com/photo-1517842645767-c639042777db') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* SECTION */
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #c48b8f;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* CATEGORY TITLE */
+.cat {
+    margin: 25px 0 10px;
+    font-weight: bold;
+    color: #8fae9b;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* CART */
+.cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #8fae9b;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
